@@ -1,0 +1,20 @@
+[
+  {
+    "model": "gpt-image-1",
+    "theme": "anime style character",
+    "size": "1024x1024",
+    "file": "images/gpt-image-1_1024x1024_1781339954247.png"
+  },
+  {
+    "model": "gpt-image-1",
+    "theme": "anime style character",
+    "size": "1536x1024",
+    "file": "images/gpt-image-1_1536x1024_1781339974575.png"
+  },
+  {
+    "model": "gpt-image-1",
+    "theme": "anime style character",
+    "size": "1024x1536",
+    "file": "images/gpt-image-1_1024x1536_1781340026137.png"
+  }
+]
