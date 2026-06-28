@@ -1,7 +1,7 @@
 {
   "name": "exercise-4",
   "version": "1.0.0",
-  "description": "",
+  "description": "![text](/Exercise%204/Ans.png)\r ![thumbnails ](/Exercise%204/output/images/thumbnail.png)\r [🎧 Listen to Audio](/Exercise%204/output/audio/narration.mp3)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "openai": "^6.42.0"
+    "openai": "^6.43.0"
   }
 }
