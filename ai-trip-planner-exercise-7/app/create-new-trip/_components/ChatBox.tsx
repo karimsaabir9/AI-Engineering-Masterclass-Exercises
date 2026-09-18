@@ -228,7 +228,7 @@ function ChatBox({ onTripReady, onViewTrip }: ChatBoxProps) {
           if (msg.role == "user") {
             return (
               <div key={index} className="flex justify-end mt-2">
-                <div className="max-w-lg bg-primary text-white px-4 py-2 rounded-lg">
+                <div className="max-w-lg bg-accent text-accent-foreground px-4 py-2 rounded-lg">
                   {msg.content}
                 </div>
               </div>
@@ -238,7 +238,7 @@ function ChatBox({ onTripReady, onViewTrip }: ChatBoxProps) {
           return (
             <div key={index} className="flex justify-start mt-2">
               <div
-                className={`${generativeUi ? "w-full" : "max-w-[85%] sm:max-w-lg"} bg-gray-100 text-black px-4 py-2 rounded-lg`}
+                className={`${generativeUi ? "w-full" : "max-w-[85%] sm:max-w-lg"} bg-muted text-foreground px-4 py-2 rounded-lg`}
               >
                 <MarkdownRenderer content={msg.content} />
                 {generativeUi}
@@ -248,14 +248,14 @@ function ChatBox({ onTripReady, onViewTrip }: ChatBoxProps) {
         })}
         {loading && (
           <div className="flex justify-start mt-2">
-            <div className="max-w-lg bg-gray-100 text-black px-4 py-2 rounded-lg">
+            <div className="max-w-lg bg-muted text-foreground px-4 py-2 rounded-lg">
               <Loader className="animate-spin" />
             </div>
           </div>
         )}
       </section>
       {/* User Input */}
-      <section className="relative shrink-0 min-h-28 rounded-2xl bg-white border border-gray-300 p-2">
+      <section className="relative shrink-0 min-h-28 rounded-2xl bg-white border p-2">
         <Textarea
           placeholder="Start typing here..."
           className="w-full h-28 bg-transparent border-none focus-visible:ring-0 shadow-none resize-none"

@@ -21,6 +21,7 @@ function GlobalMap() {
         zoom: 1.7,
         projection: "globe",
       });
+      mapRef.current.on("load", () => mapRef.current?.resize());
     }
 
     // Remove existing markers before adding new ones
@@ -79,9 +80,8 @@ function GlobalMap() {
     <div>
       <div
         ref={mapContainerRef}
-        className="w-full lg:w-[95%]"
+        className="w-full lg:w-[95%] sticky top-0 h-screen"
         style={{
-          height: "85vh",
           borderRadius: 20,
         }}
       ></div>

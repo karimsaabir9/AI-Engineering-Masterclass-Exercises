@@ -44,7 +44,7 @@ function PlaceCardItem({activity}: Props) {
     <h2 className="font-semibold text-lg">
       {activity?.place_name}
     </h2>
-    <p className="text-gray-500 line-clamp-2">
+    <p className="text-muted-foreground line-clamp-2">
       {activity?.place_details}
     </p>
     <h2 className="flex gap-2 text-blue-500 line-clamp-1">

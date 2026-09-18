@@ -28,7 +28,7 @@ export const SelectBudgetOptions: {
     title: "Luxury",
     desc: "Don't worry about cost",
     icon: Gem,
-    color: "bg-purple-100 text-purple-600",
+    color: "bg-accent/15 text-accent",
   },
 ];
 
@@ -49,7 +49,7 @@ function BudgetUi({ onSelectedOption }: Props) {
             <item.icon className="h-7 w-7" strokeWidth={1.75} />
           </div>
           <h2 className=" text-lg font-semibold mt-2">{item.title}</h2>
-          <p className="text-sm text-gray-500">{item.desc}</p>
+          <p className="text-sm text-muted-foreground">{item.desc}</p>
         </div>
       ))}
     </div>

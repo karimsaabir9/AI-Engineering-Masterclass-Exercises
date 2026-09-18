@@ -43,7 +43,7 @@ function HotelCardItem({ hotel }: Props) {
         className="rounded-xl shadow object-cover w-full aspect-[2/1] h-auto"
       />
       <h2 className="font-semibold text-lg line-clamp-2">{hotel?.hotel_name}</h2>
-      <h2 className="text-gray-500 line-clamp-2">{hotel.hotel_address}</h2>
+      <h2 className="text-muted-foreground line-clamp-2">{hotel.hotel_address}</h2>
       <div className="flex justify-between items-center">
         <p className="flex gap-2 text-green-600">
           <Wallet /> {hotel.price_per_night}

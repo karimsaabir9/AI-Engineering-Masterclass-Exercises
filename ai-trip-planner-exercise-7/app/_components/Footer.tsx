@@ -24,14 +24,14 @@ function Footer() {
         <div className="flex gap-8 items-center">
           {footerLinks.map((link, index) => (
             <Link href={link.path} key={index}>
-              <h2 className="text-sm hover:text-primary transition-all">
+              <h2 className="text-sm hover:text-secondary transition-all">
                 {link.name}
               </h2>
             </Link>
           ))}
         </div>
 
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} AI Trip Planner. All rights reserved.
         </p>
       </div>

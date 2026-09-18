@@ -60,7 +60,7 @@ function Header() {
         <div className="hidden md:flex gap-8 items-center">
           {menuOptions.map((menu, index) => (
             <Link href={menu.path} key={index}>
-              <h2 className="text-lg hover:scale-105 transition-all hover:text-primary">
+              <h2 className="text-lg hover:scale-105 transition-all hover:text-secondary">
                 {menu.name}
               </h2>
             </Link>
@@ -98,7 +98,7 @@ function Header() {
                   aria-label="Open user account menu"
                   aria-haspopup="true"
                   aria-expanded={menuOpen}
-                  className="w-11 h-11 rounded-full bg-purple-600 text-white font-semibold flex items-center justify-center hover:opacity-90 active:scale-95 transition"
+                  className="w-11 h-11 rounded-full bg-primary text-white font-semibold flex items-center justify-center hover:opacity-90 active:scale-95 transition"
                 >
                   {initial}
                 </button>
@@ -113,14 +113,14 @@ function Header() {
                   }`}
                 >
                   <div className="flex items-center gap-3 px-4 py-2">
-                    <div className="w-10 h-10 rounded-full bg-purple-600 text-white font-semibold flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-primary text-white font-semibold flex items-center justify-center shrink-0">
                       {initial}
                     </div>
                     <div className="min-w-0">
                       <p className="text-sm font-semibold truncate">
                         {user?.fullName || user?.username}
                       </p>
-                      <p className="text-xs text-gray-500 truncate">
+                      <p className="text-xs text-muted-foreground truncate">
                         {user?.primaryEmailAddress?.emailAddress}
                       </p>
                     </div>
@@ -184,7 +184,7 @@ function Header() {
               key={index}
               onClick={() => setMobileNavOpen(false)}
             >
-              <h2 className="text-lg hover:text-primary">{menu.name}</h2>
+              <h2 className="text-lg hover:text-secondary">{menu.name}</h2>
             </Link>
           ))}
           {!user ? (

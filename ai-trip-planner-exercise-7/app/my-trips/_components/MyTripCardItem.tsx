@@ -31,7 +31,7 @@ function MyTripCardItem({ trip }: Props) {
   }, [trip]);
 
   return (
-    <Link href={'/view-trip/'+trip?.tripId} className="p-5 shadow rounded-2xl ">
+    <Link href={'/view-trip/'+trip?.tripId} className="p-5 shadow rounded-2xl bg-card">
       <Image
         src={photoUrl ? photoUrl : "/placeholders/hotel.jpg"}
         alt={`${trip?.tripDetail?.destination ?? "Trip"} photo`}
@@ -44,7 +44,7 @@ function MyTripCardItem({ trip }: Props) {
         <ArrowBigRightIcon className="shrink-0" />
         {trip?.tripDetail?.destination}
       </h2>
-      <h2 className="mt-2 text-gray-500">
+      <h2 className="mt-2 text-muted-foreground">
         {trip?.tripDetail?.duration} Trip with {trip?.tripDetail?.budget} Budget
       </h2>
     </Link>
